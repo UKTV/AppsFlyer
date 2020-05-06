@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2016 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -20,10 +20,11 @@ namespace appsflyer {
 class ExampleProxy : public titanium::Proxy
 {
 public:
-	explicit ExampleProxy(jobject javaObject);
+	explicit ExampleProxy();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);
+	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Local<v8::Context>);
 	static void dispose(v8::Isolate*);
 
 	static jclass javaClass;

@@ -12,13 +12,14 @@
 		  <uses-permission android:name="android.permission.INTERNET" />
 		  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 		  <permission android:name="${tiapp.properties['id']}.permission.MY_NEW_PERMISSION" android:protectionLevel="signature" />
+			<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
 
 		  <application>
-			  <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
-				  <intent-filter>
-					  <action android:name="com.android.vending.INSTALL_REFERRER" />
-				  </intent-filter>
-			  </receiver>
+				<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+					<intent-filter>
+						<action android:name="com.android.vending.INSTALL_REFERRER" />
+					</intent-filter>
+				</receiver>
 
 			  <!--<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />-->
 			  <!--<meta-data android:name="com.google.android.gms.version" android:value="8487000" />-->

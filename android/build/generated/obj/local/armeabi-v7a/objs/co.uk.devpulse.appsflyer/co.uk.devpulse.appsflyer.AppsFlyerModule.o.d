@@ -1,260 +1,173 @@
-/var/folders/53/3pj2hcvx59b461j7q8tgfs600000gn/T//jayy/appsflyer-generated/obj/local/armeabi-v7a/objs/co.uk.devpulse.appsflyer/co.uk.devpulse.appsflyer.AppsFlyerModule.o: \
- jni/co.uk.devpulse.appsflyer.AppsFlyerModule.cpp \
- jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/jni.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/api-level.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/Proxy.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdint.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/_types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/_types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/limits.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/limits.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/limits.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/internal_types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/limits.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/syslimits.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/page.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdio.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/posix_types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/stddef.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/compiler.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/posix_types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/types.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/kernel.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/sysmacros.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/string.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/malloc.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/new \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/assert.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8-version.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8config.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JavaObject.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/EventEmitter.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/NativeObject.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/AndroidUtil.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/log.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdlib.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/alloca.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/strings.h \
- /Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/memory.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/EventEmitter.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JNIUtil.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/AndroidUtil.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JSException.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/ProxyFactory.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/TypeConverter.h \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/map \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
- /Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/V8Util.h \
- jni/co.uk.devpulse.appsflyer.ExampleProxy.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/org.appcelerator.kroll.KrollModule.h \
- /Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/Proxy.h
+/Users/knemeth/Documents/GitHub/AppsFlyer/android/build/generated/obj/local/armeabi-v7a/objs/co.uk.devpulse.appsflyer/co.uk.devpulse.appsflyer.AppsFlyerModule.o: \
+  jni/co.uk.devpulse.appsflyer.AppsFlyerModule.cpp \
+  jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/Proxy.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdint.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__config \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/memory \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/type_traits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstddef \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/version \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/typeinfo \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/exception \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdlib \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdlib.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdint \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/new \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/utility \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tuple \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/initializer_list \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstring \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/string.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__debug \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iterator \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iosfwd \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/wchar.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__functional_base \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/tuple \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdexcept \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cassert \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/atomic \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/vector \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__bit_reference \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/bit \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/algorithm \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/functional \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/climits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__split_buffer \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-internal.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-version.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8config.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JavaObject.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/EventEmitter.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/NativeObject.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/AndroidUtil.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JNIUtil.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JSException.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/TypeConverter.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/map \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tree \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__node_handle \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/optional \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/V8Util.h \
+  jni/co.uk.devpulse.appsflyer.ExampleProxy.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h
 
 jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/jni.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/Proxy.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/api-level.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdint.h:
 
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/Proxy.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdio.h:
 
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__config:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/memory:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdint.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/type_traits:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/_types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstddef:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/_types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/version:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/limits.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/typeinfo:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/limits.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/exception:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/limits.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdlib:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/internal_types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/limits.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdint:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/syslimits.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/new:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/page.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/utility:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tuple:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdio.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/initializer_list:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstring:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/posix_types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/string.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/stddef.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__debug:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/compiler.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/posix_types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iterator:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iosfwd:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/types.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/wchar.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/machine/kernel.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__functional_base:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/sysmacros.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/tuple:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdexcept:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cassert:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/atomic:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/vector:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__bit_reference:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/bit:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/algorithm:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/functional:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/climits:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__split_buffer:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-internal.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-version.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8config.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/string.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JavaObject.h:
 
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/malloc.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/EventEmitter.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/NativeObject.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/AndroidUtil.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JNIUtil.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JSException.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/new:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/TypeConverter.h:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/map:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tree:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__node_handle:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/optional:
 
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/assert.h:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8-version.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/v8config.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JavaObject.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/EventEmitter.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/NativeObject.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/AndroidUtil.h:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/log.h:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdlib.h:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/alloca.h:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/strings.h:
-
-/Users/jayy/Programming/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/memory.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/EventEmitter.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JNIUtil.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/AndroidUtil.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/JSException.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/ProxyFactory.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/TypeConverter.h:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/map:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
-
-/Users/jayy/Programming/android-ndk-r10e/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/V8Util.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/V8Util.h:
 
 jni/co.uk.devpulse.appsflyer.ExampleProxy.h:
 
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/org.appcelerator.kroll.KrollModule.h:
-
-/Users/jayy/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.4.GA/android/native/include/Proxy.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h:
