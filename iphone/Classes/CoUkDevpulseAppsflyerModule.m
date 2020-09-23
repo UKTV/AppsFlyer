@@ -9,7 +9,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
-#import "AppsFlyerTracker.h"
+#import "AppsFlyerLib.h"
 
 @implementation CoUkDevpulseAppsflyerModule
 
@@ -116,21 +116,23 @@
 
     id appsFlyerDevKey = [args objectForKey:@"appsFlyerDevKey"];
     id appleAppID = [args objectForKey:@"appleAppID"];
-    id isDebug = [TiUtils boolValue:[args objectForKey:@"isDebug"] def:NO];
 
     ENSURE_STRING(appsFlyerDevKey)
     ENSURE_STRING(appleAppID)
 
-    [AppsFlyerTracker sharedTracker].appsFlyerDevKey = appsFlyerDevKey;
-    [AppsFlyerTracker sharedTracker].appleAppID = appleAppID;
-    [AppsFlyerTracker sharedTracker].isDebug = isDebug;
+    // 2 - Replace 'appsFlyerDevKey', `appleAppID` with your DevKey, Apple App ID
+		[AppsFlyerLib shared].appsFlyerDevKey = appsFlyerDevKey;
+		[AppsFlyerLib shared].appleAppID = appleAppID;
+		[AppsFlyerLib shared].delegate = self;
+    //  Set isDebug to true to see AppsFlyer debug logs
+    [AppsFlyerLib shared].isDebug = true;
 }
 
 
-//get conversion data and deep linking
 
+// AppsFlyerLib implementation
+//Handle Conversion Data (Deferred Deep Link)
 -(void)onConversionDataSuccess:(NSDictionary*) installData {
-  //Handle Conversion Data (Deferred Deep Link)
     id status = [installData objectForKey:@"af_status"];
     if([status isEqualToString:@"Non-organic"]) {
         id sourceID = [installData objectForKey:@"media_source"];
@@ -139,31 +141,24 @@
     } else if([status isEqualToString:@"Organic"]) {
         NSLog(@"This is an organic install.");
     }
-
 }
-
 -(void)onConversionDataFail:(NSError *) error {
-
-  NSLog(@"%@",error);
+    NSLog(@"%@",error);
 }
-
-
+//Handle Direct Deep Link
 - (void) onAppOpenAttribution:(NSDictionary*) attributionData {
-
-  //Handle Deep Link
-  NSLog(@"%@",attributionData);
+    NSLog(@"%@",attributionData);
 }
-
 - (void) onAppOpenAttributionFailure:(NSError *)error {
-  NSLog(@"%@",error);
+    NSLog(@"%@",error);
 }
+
 
 -(void)trackAppLaunch:(id)value
 {
     [self log:@"Tracking app launch."];
 
-    // track installs, updates & sessions (app opens)
-    [[AppsFlyerTracker sharedTracker] trackAppLaunch];
+    [[AppsFlyerLib shared] start];
 }
 
 -(void)trackEvent:(id)args
@@ -177,7 +172,7 @@
     ENSURE_STRING(name)
     ENSURE_TYPE_OR_NIL(data, NSDictionary)
 
-    [[AppsFlyerTracker sharedTracker] trackEvent:name withValues:data];
+    [[AppsFlyerLib shared] logEvent:name withValues:data];
 }
 
 -(void)continueUserActivity:(id)args
@@ -211,7 +206,7 @@
         activity.userInfo = activityUserInfo;
     }
 
-    [[AppsFlyerTracker sharedTracker] continueUserActivity:activity restorationHandler:nil];
+    [[AppsFlyerLib shared] continueUserActivity:activity restorationHandler:nil];
     [self log:@"Finished tracking continueUserActivity."];
 }
 
@@ -229,7 +224,7 @@
     NSMutableDictionary *options = [NSMutableDictionary dictionaryWithDictionary:args];
     [options removeObjectForKey:@"url"];
 
-    [[AppsFlyerTracker sharedTracker] handleOpenUrl:url options:options];
+		[[AppsFlyerLib shared] handleOpenUrl:url options:options];
     [self log:@"Finished tracking handleOpenUrl."];
 }
 
