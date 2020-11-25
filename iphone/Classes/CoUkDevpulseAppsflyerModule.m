@@ -127,7 +127,7 @@
     //  Set isDebug to true to see AppsFlyer debug logs
     [AppsFlyerLib shared].isDebug = true;
 
-		[AppsFlyerLib shared].disableCollectASA = YES;
+		//[AppsFlyerLib shared].disableCollectASA = YES;
 		[AppsFlyerLib shared].disableAdvertisingIdentifier = YES;
 }
 
