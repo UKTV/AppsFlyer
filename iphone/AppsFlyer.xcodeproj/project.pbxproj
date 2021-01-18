@@ -22,6 +22,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1A3307B9251B3F32001CBD4D /* AppsFlyerLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */; };
+		1AE1656925B5CFF500A8C792 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE1656825B5CFF500A8C792 /* AppTrackingTransparency.framework */; };
+		1AE89A9523D72FAA00623196 /* AppsFlyerShareInviteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */; };
+		1AE89A9823D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */; };
+		1AE89A9923D72FAA00623196 /* AppsFlyerLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */; };
 		24DD6CF91134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h */; };
 		24DD6CFA1134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h */; };
@@ -44,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerLib.h; sourceTree = "<group>"; };
+		1AE1656825B5CFF500A8C792 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = DEVELOPER_DIR; };
+		1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerShareInviteHelper.h; sourceTree = "<group>"; };
+		1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerCrossPromotionHelper.h; sourceTree = "<group>"; };
+		1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerLinkGenerator.h; sourceTree = "<group>"; };
 		24DD6CF71134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoUkDevpulseAppsflyerModule.h; path = Classes/CoUkDevpulseAppsflyerModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoUkDevpulseAppsflyerModule.m; path = Classes/CoUkDevpulseAppsflyerModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
@@ -62,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				653F9EBA1EE5636700E6A58B /* libAppsFlyerLib.a in Frameworks */,
+				1AE1656925B5CFF500A8C792 /* AppTrackingTransparency.framework in Frameworks */,
+				AB103C6A2141441400D74BE7 /* iAd.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */,
 			);
@@ -93,8 +104,12 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				653F9EB71EE5636700E6A58B /* AppsFlyerTracker.h */,
-				653F9EB81EE5636700E6A58B /* libAppsFlyerLib.a */,
+				1AE1656825B5CFF500A8C792 /* AppTrackingTransparency.framework */,
+				1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */,
+				1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */,
+				1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */,
+				1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */,
+				AB103C692141441400D74BE7 /* iAd.framework */,
 				65B766EA1EE95716000A0F40 /* AdSupport.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
@@ -228,6 +243,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/CoUkDevpulseAppsflyer.dst;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 x86_64 i386";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -248,8 +265,12 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/platform";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/platform",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -270,6 +291,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CoUkDevpulseAppsflyer.dst;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

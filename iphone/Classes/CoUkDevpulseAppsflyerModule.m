@@ -9,7 +9,8 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
-#import "AppsFlyerTracker.h"
+#import "AppsFlyerLib.h"
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 @implementation CoUkDevpulseAppsflyerModule
 
@@ -86,6 +87,7 @@
 	}
 }
 
+
 #pragma Public APIs
 
 -(id)example:(id)args
@@ -111,25 +113,84 @@
 
 -(void)initialise:(id)args
 {
+
+		if (@available(iOS 14.0, *)) {
+			switch ([ATTrackingManager trackingAuthorizationStatus]) {
+				case ATTrackingManagerAuthorizationStatusNotDetermined:
+					[self log:@"TrackingAuthorizationStatus : Not Determined"];
+					[ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(__unused ATTrackingManagerAuthorizationStatus status) {
+						switch ([ATTrackingManager trackingAuthorizationStatus]) {
+							case ATTrackingManagerAuthorizationStatusNotDetermined:
+								[self log:@"TrackingAuthorizationStatus : Not Determined"];
+								break;
+							case ATTrackingManagerAuthorizationStatusRestricted:
+								[self log:@"TrackingAuthorizationStatus : Restricted"];
+								break;
+							case ATTrackingManagerAuthorizationStatusDenied:
+								[self log:@"TrackingAuthorizationStatus : Denied"];
+								break;
+							case ATTrackingManagerAuthorizationStatusAuthorized:
+								[self log:@"TrackingAuthorizationStatus : Authorized"];
+								break;
+						}
+					}];
+					break;
+				case ATTrackingManagerAuthorizationStatusRestricted:
+					[self log:@"TrackingAuthorizationStatus : Restricted"];
+					break;
+				case ATTrackingManagerAuthorizationStatusDenied:
+					[self log:@"TrackingAuthorizationStatus : Denied"];
+					break;
+				case ATTrackingManagerAuthorizationStatusAuthorized:
+					[self log:@"TrackingAuthorizationStatus : Authorized"];
+					break;
+			}
+		}
+
     [self log:@"Initialising tracker."];
     ENSURE_SINGLE_ARG(args, NSDictionary)
-    
+
     id appsFlyerDevKey = [args objectForKey:@"appsFlyerDevKey"];
     id appleAppID = [args objectForKey:@"appleAppID"];
     id isDebug = [TiUtils boolValue:[args objectForKey:@"isDebug"] def:NO];
-    
+
     ENSURE_STRING(appsFlyerDevKey)
     ENSURE_STRING(appleAppID)
-    
-    [AppsFlyerTracker sharedTracker].appsFlyerDevKey = appsFlyerDevKey;
-    [AppsFlyerTracker sharedTracker].appleAppID = appleAppID;
-    [AppsFlyerTracker sharedTracker].isDebug = isDebug;
+
+    // 2 - Replace 'appsFlyerDevKey', `appleAppID` with your DevKey, Apple App ID
+		[AppsFlyerLib shared].appsFlyerDevKey = appsFlyerDevKey;
+		[AppsFlyerLib shared].appleAppID = appleAppID;
+		[AppsFlyerLib shared].delegate = self;
+    //  Set isDebug to true to see AppsFlyer debug logs
+    [AppsFlyerLib shared].isDebug = true;
+
+		[AppsFlyerLib shared].disableAdvertisingIdentifier = YES;
+}
+
+// AppsFlyerLib implementation
+//Handle Conversion Data (Deferred Deep Link)
+-(void)onConversionDataSuccess:(NSDictionary*) installData {
+    id status = [installData objectForKey:@"af_status"];
+    if([status isEqualToString:@"Non-organic"]) {
+        id sourceID = [installData objectForKey:@"media_source"];
+        id campaign = [installData objectForKey:@"campaign"];
+        NSLog(@"This is a none organic install. Media source: %@  Campaign: %@",sourceID,campaign);
+    } else if([status isEqualToString:@"Organic"]) {
+        NSLog(@"This is an organic install.");
+    }
+}
+-(void)onConversionDataFail:(NSError *) error {
+    NSLog(@"%@",error);
+}
+//Handle Direct Deep Link
+- (void) onAppOpenAttribution:(NSDictionary*) attributionData {
+    NSLog(@"%@",attributionData);
 }
 
 -(void)trackAppLaunch:(id)value
 {
     [self log:@"Tracking app launch."];
-    
+
     // track installs, updates & sessions (app opens)
     [[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
@@ -138,13 +199,13 @@
 {
     [self log:@"Tracking Event."];
     ENSURE_SINGLE_ARG(args, NSDictionary)
-    
+
     id name = [args objectForKey:@"name"];
     id data = [args objectForKey:@"data"];
-    
+
     ENSURE_STRING(name)
     ENSURE_TYPE_OR_NIL(data, NSDictionary)
-    
+
     [[AppsFlyerTracker sharedTracker] trackEvent:name withValues:data];
 }
 
@@ -152,33 +213,33 @@
 {
     [self log:@"Inside continueUserActivity."];
     ENSURE_SINGLE_ARG(args, NSDictionary);
-    
+
     // got the object keys from here: https://github.com/appcelerator/titanium_mobile/pull/6937/files
     id activityType = [args objectForKey:@"activityType"];
     id activityTitle = [args objectForKey:@"title"];
     id activityWebpageURL = [args objectForKey:@"webpageURL"];
     id activityUserInfo = [args objectForKey:@"userInfo"];
-    
+
     ENSURE_STRING(activityType)
     ENSURE_TYPE_OR_NIL(activityTitle, NSString)
     ENSURE_TYPE_OR_NIL(activityWebpageURL, NSString)
     ENSURE_TYPE_OR_NIL(activityUserInfo, NSDictionary)
-    
+
     NSUserActivity *activity = [[NSUserActivity alloc]initWithActivityType:activityType];
     [self log:[NSString stringWithFormat:@"Activity type: %@", activityType]];
-    
+
     if (activityTitle != nil) {
         activity.title = activityTitle;
     }
-    
+
     if (activityWebpageURL != nil) {
         activity.webpageURL = [NSURL URLWithString:activityWebpageURL];
     }
-    
+
     if (activityUserInfo != nil) {
         activity.userInfo = activityUserInfo;
     }
-    
+
     [[AppsFlyerTracker sharedTracker] continueUserActivity:activity restorationHandler:nil];
     [self log:@"Finished tracking continueUserActivity."];
 }
@@ -187,16 +248,16 @@
 {
     [self log:@"Inside handleOpenUrl."];
     ENSURE_SINGLE_ARG(args, NSDictionary);
-    
+
     id urlString = [args objectForKey:@"url"];
     ENSURE_STRING(urlString)
     NSURL *url = [NSURL URLWithString:urlString];
-    
+
     [self log:[NSString stringWithFormat:@"URL for handleOpenUrl: %@", urlString]];
-    
+
     NSMutableDictionary *options = [NSMutableDictionary dictionaryWithDictionary:args];
     [options removeObjectForKey:@"url"];
-    
+
     [[AppsFlyerTracker sharedTracker] handleOpenUrl:url options:options];
     [self log:@"Finished tracking handleOpenUrl."];
 }
