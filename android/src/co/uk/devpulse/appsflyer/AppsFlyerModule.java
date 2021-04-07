@@ -91,7 +91,7 @@ public class AppsFlyerModule extends KrollModule
 		Boolean isDebug = TiConvert.toBoolean(args.get("isDebug"));
 		String devKey = TiConvert.toString(args.get("appsFlyerDevKey"));
 
-		AppsFlyerLib.getInstance().startTracking(appContext, devKey);
+		AppsFlyerLib.getInstance().start(appContext, devKey);
 
 		// https://github.com/AppsFlyerSDK/AndroidSampleApp/blob/master/app/src/main/java/android/appsflyer/sampleapp/MainActivity.java
 		// have to implement these, even if you dont add any logic to them
@@ -136,7 +136,7 @@ public class AppsFlyerModule extends KrollModule
 		String name = TiConvert.toString(args.get("name"));
 		HashMap<String, Object> data = toHashMap(args.get("data"));
 
-		AppsFlyerLib.getInstance().trackEvent(appContext, name, data);
+		AppsFlyerLib.getInstance().logEvent(appContext, name, data);
 	}
 
 }
