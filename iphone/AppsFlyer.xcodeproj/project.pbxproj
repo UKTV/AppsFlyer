@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1A282E1B2626EFA2002115E5 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A282E1A2626EFA2002115E5 /* TitaniumKit.xcframework */; };
 		1A3307B9251B3F32001CBD4D /* AppsFlyerLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */; };
 		1AE89A9523D72FAA00623196 /* AppsFlyerShareInviteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */; };
 		1AE89A9823D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A282E1A2626EFA2002115E5 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "../../../../Library/Application Support/Titanium/mobilesdk/osx/9.3.2.GA/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerLib.h; sourceTree = "<group>"; };
 		1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerShareInviteHelper.h; sourceTree = "<group>"; };
 		1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerCrossPromotionHelper.h; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A282E1B2626EFA2002115E5 /* TitaniumKit.xcframework in Frameworks */,
 				AB103C6A2141441400D74BE7 /* iAd.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A282E1A2626EFA2002115E5 /* TitaniumKit.xcframework */,
 				1A3307B8251B3F31001CBD4D /* AppsFlyerLib.h */,
 				1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */,
 				1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */,
@@ -345,6 +349,7 @@
 				DSTROOT = /tmp/CoUkDevpulseAppsflyer.dst;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -405,6 +410,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DSTROOT = /tmp/CoUkDevpulseAppsflyer.dst;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -426,6 +432,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = co.uk.devpulse.appsflyer;
