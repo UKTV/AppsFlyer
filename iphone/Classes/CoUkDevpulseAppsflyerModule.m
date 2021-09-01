@@ -129,6 +129,12 @@
 
 		//[AppsFlyerLib shared].disableCollectASA = YES;
 		[AppsFlyerLib shared].disableAdvertisingIdentifier = YES;
+
+		NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+		[[AppsFlyerLib shared] setCurrentDeviceLanguage:language];
+		[self log:[NSString stringWithFormat:@"setCurrentDeviceLanguage to: %@", language]];
+
+
 }
 
 
